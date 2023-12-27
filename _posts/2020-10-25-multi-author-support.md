@@ -2,7 +2,7 @@
 layout: post
 title:  "Added Multi Author Support"
 summary: "Multi Author Support allows to create articles with different Authors"
-author: xplor4r
+author: tiagosr
 date: '2020-10-25 1:35:23 +0530'
 category: jekyll
 thumbnail: /assets/img/posts/code.jpg
@@ -28,7 +28,7 @@ name: John Doe # Name of the Author
 username: johndoe # Username of the Author
 bio: "Hi I a John, a Web Developer and Designer." # Author Bio
 site: http://johndoe.com  # Author Website URL
-avatar: johndoe.png  # Profile Image (img path will be /assets/img/authors/johndoe.png)
+avatar: tiagosr.png  # Profile Image (img path will be /assets/img/authors/tiagosr.png)
 email: mail@johndoe.com  # Author Email address
 social:  # Author Social profile links
     - title: "github"
@@ -65,7 +65,7 @@ johndoe:
    name: John Doe
    username: johndoe
    site: http://johndoe.com
-   avatar: johndoe.png
+   avatar: tiagosr.png
    bio: "Hi I a John, a Web Developer and Designer."
    email: mail@johndoe.com
    social:

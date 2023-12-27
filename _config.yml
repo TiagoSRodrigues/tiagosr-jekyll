@@ -1,3 +1,4 @@
+site_version: 1.0.1
 title: Tiago S Rodrigues
 subtitle: My digital presentation and playground
 description: >- # this means to ignore newlines until "baseurl:"
@@ -27,39 +28,51 @@ author_bio: Passionate about Cloud computing, DevOps, and creating intelligent p
 author_email: "info@tiagosr.eu"
 author_location: Lisbon, Portugal  # Please provide your location
 author_website_url: "https://tiagosr.eu"
-typewrite-text: "Generating Value through innovative IT solutions."
+typewrite-text: "Generating value through innovative solutions."
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover
 
 # Experiences
 author_work_experiences:
             - company_name: Novobanco
-              company_logo: [Company Logo Path]  # Please provide the logo path
-              company_url: [Company URL]  # Please provide the URL
-              designation: [Your Designation]  # Please provide your designation
+              company_logo: novobanco.png  # Please provide the logo path
+              company_url: novobanco.pt  # Please provide the URL
+              designation: Systems Analyst  # Please provide your designation
               description: Focusing on optimizing operational efficiency and maximizing client value in Cloud computing and DevOps.
               visibility: true
-
+            - company_name: Novobanco
+              company_logo: novobanco.png  # Please provide the logo path
+              company_url: novobanco.pt  # Please provide the URL
+              designation: Data Analyst  # Please provide your designation
+              description: Focusing on optimizing operational efficiency and maximizing client value in Cloud computing and DevOps.
+              visibility: true
 # Education
 author_education_details:
-              - college_logo: [College Logo Path]  # Please provide the logo path
-                college_name: [College Name]  # Please provide the college name
-                college_url: [College URL]  # Please provide the URL
-                college_degree: [Your Degree]  # Please provide your degree
-                description: [Description of your education]  # Please provide a description
+              - college_logo: IST_Logo.png  # Please provide the logo path
+                college_name: Instituto Superior Técnico - Universidade de Lisboa  # Please provide the college name
+                college_url: https://tecnicomais.pt/cursos/engenharia-de-software-e-dos-sistemas-de-informacao-empresariais-sise/  # Please provide the URL
+                college_degree: Postgraduation in Software and Information Systems Engineering  # Please provide your degree
+                description: 42 ECTS | Course focused on the management and operation of organizations from a systems engineering perspective.  # Please provide a description
                 visibility: true
-
+              - college_logo: logo_ISEL_simplificado_cor.png  # Please provide the logo path
+                college_name: Instituto Superior de Engenharia de Lisboa  # Please provide the college name
+                college_url: https://www.isel.pt/en/curso/masters-degree/master-industrial-engineering-and-management  # Please provide the URL
+                college_degree: Industrial Engineering and Management MSc  # Please provide your degree
+                description: 120 ECTS | Integrated vision of production and services systems management, with focus in systems's design and collaborate in the creation, development, implementation, and improvement of integrated systems.  # Please provide a description
+                visibility: true
+              - college_logo: logo_ISEL_simplificado_cor.png  # Please provide the logo path
+                college_name: Instituto Superior de Engenharia de Lisboa  # Please provide the college name
+                college_url: https://www.isel.pt/en/curso/bsc-degree/chemical-and-biological-engineeringt  # Please provide the URL
+                college_degree: Chemical and Biological Engineering BSc  # Please provide your degree
+                description: 180 ECTS | Chemical engineering elegantly combines mathematics and natural sciences to transform materials and nature's forces, aiming to enhance human life through innovative, practical solutions
+                visibility: true
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
+              - project_thumbnail: bullwhipcover.svg
                 project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+                project_description: Bullwhip effect simulation in complex distribution chains
+                project_url: https://github.com/TiagoSRodrigues/Bullwhip
                 visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
-                visibility: true
+
 
 # social links
 github_username:  TiagoSRodrigues
@@ -77,8 +90,8 @@ linkedin_username: tiagosilvarodrigues
 # mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
-# getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
-# formspree_email: johndoe@gmail.com
+getform_endpoint: af7c35ab-4c4a-4d8b-b614-47dc9ad58c0e
+formspree_email: tiago4r@gmail.com
 
 # releases - widget can be (sidebar, modal or embed)
 # olvy_organization: devlopr
@@ -99,13 +112,13 @@ paginate: 4
 per_page: 4
 paginate_path: "/blog/page/:num/"
 
-# minify
-# compress_html:
-#   clippings: all
-#   comments: ["<!-- ", " -->"]
-#   endings: all
-#   ignore:
-#     envs: ['development']
+#minify
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
 
 # Archives
 # jekyll-archives:
@@ -122,11 +135,11 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
-      path: "gallery"
-    values:
-      permalink: /:path/:basename:output_ext
+  # -
+  #   scope:
+  #     path: "gallery"
+  #   values:
+  #     permalink: /:path/:basename:output_ext
   -
     scope:
       path: ""
