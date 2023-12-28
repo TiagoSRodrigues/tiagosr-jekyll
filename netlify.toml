@@ -1,5 +1,5 @@
 [build]
-  command = "jekyll build"
+  command = "jekyll build --watch"
   publish = "build"
 
 [build.environment]

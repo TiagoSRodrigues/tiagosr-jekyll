@@ -78,24 +78,11 @@ author_project_details:
 github_username:  TiagoSRodrigues
 linkedin_username: tiagosilvarodrigues
 
-#for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
-
-# disqus_shortname: sujay-kundu
-# hyvor_talk_website_id: 476
-
-# wakatime username (coding activity)
-# wakatime_username: sujaykundu777
-
-# mailchimp embedded form url (newsletter):
-# mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
 getform_endpoint: af7c35ab-4c4a-4d8b-b614-47dc9ad58c0e
 formspree_email: tiago4r@gmail.com
 
-# releases - widget can be (sidebar, modal or embed)
-# olvy_organization: devlopr
-# olvy_widget_type: sidebar
 
 # syntax highlighter
 markdown: kramdown
