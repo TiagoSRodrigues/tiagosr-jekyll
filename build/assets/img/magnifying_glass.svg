@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="50"
+   height="50"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="magnifying_glass.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="9.3363636"
+     inkscape:cx="54.946446"
+     inkscape:cy="55"
+     inkscape:window-width="3840"
+     inkscape:window-height="2071"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <g
+     fill="none"
+     stroke="#808080"
+     stroke-linecap="round"
+     id="g8"
+     transform="matrix(0,-0.46138367,0.46052946,0,-0.00395206,49.371953)">
+    <path
+       d="M 43.3,47.9 C 38.94,38.37 48.2,16.3 70.9,21.3"
+       stroke-width="7"
+       id="path2" />
+    <path
+       d="M 35,72 5,102"
+       stroke-width="10"
+       id="path4" />
+    <circle
+       cx="65"
+       cy="42"
+       r="37"
+       stroke-width="10"
+       id="circle6" />
+  </g>
+</svg>
