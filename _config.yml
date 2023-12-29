@@ -4,7 +4,8 @@ subtitle: My digital presentation and playground
 description: >- # this means to ignore newlines until "baseurl:"
   I'm a Systems Engineer, focusing on operational efficiency and client value. My expertise encompasses project management, strategic planning, and innovative problem-solving. I am committed to professional growth, advocating for intelligent processes to create a more efficient society. Write an awesome description for your new site here.
 
-url: "https://tiagosr.eu" # the base hostname & protocol for your site
+# url: "https://tiagosr.eu" # the base hostname & protocol for your site
+url: "https://tiagosr.netlify.app" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
