@@ -1,0 +1,19 @@
+{
+  "name": "tiagosr",
+  "homepage": "https://github.com/TiagoSRodrigues/tiagosr",
+  "authors": [
+    "tiagosr <mail@tiagosr.eu>"
+  ],
+  "description": "Tiago S Rodrigues Personal Page",
+  "main": "",
+  "keywords": [
+
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
