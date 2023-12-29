@@ -1,6 +1,0 @@
-[build]
-  command = "jekyll build --verbose --trace"
-  publish = "build"
-
-[build.environment]
-  JEKYLL_ENV = "production"
