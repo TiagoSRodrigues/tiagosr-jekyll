@@ -7,7 +7,7 @@ description: |
   I am committed to professional growth, advocating for intelligent processes to create a more efficient society. Write an awesome description for your new site here.
 
 # url: "https://tiagosr.eu" # the base hostname & protocol for your site
-url: "https://tiagosr.netlify.app" # the base hostname & protocol for your site
+url: "https://tiagosr.eu" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
