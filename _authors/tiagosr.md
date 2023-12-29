@@ -4,7 +4,7 @@ username: Tiagosrodrigues
 bio: "Hi I'm Tiago, from DevOps."
 site: http://tiagosr.eu
 avatar: avatar.png
-email: info@tiagosr.eu
+email: mail@tiagosr.eu
 social:
     - title: "github"
       url: "https://github.com/TiagoSRodrigues"

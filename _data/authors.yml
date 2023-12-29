@@ -1,7 +1,7 @@
 # Add Authors here
 johndoe:
    name: John Doe
-   username: tiagosr
+   username: johndoe
    site: http://johndoe.com
    avatar: tiagosr.png
    bio: "Hi I a John, a Web Developer and Designer."
@@ -36,7 +36,7 @@ tiagosr:
    site: https://tiagosr.eu
    avatar: tiagosr.png
    bio: "DevOps Engineer"
-   email: info@tiagosr.eu
+   email: mail@tiagosr.eu
    social:
       - title: "github"
         url: "https://github.com/TiagoSRodrigues"

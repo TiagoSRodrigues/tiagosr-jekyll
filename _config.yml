@@ -1,4 +1,4 @@
-site_version: 1.0.1
+site_version: 1.1.0
 title: Tiago S Rodrigues
 subtitle: My digital presentation and playground
 description: >- # this means to ignore newlines until "baseurl:"
@@ -24,11 +24,16 @@ urls:
 # Edit Author details
 author_logo: avatar.png  # Assuming the logo is in the specified path
 author: Tiago S Rodrigues
-author_bio: Passionate about Cloud computing, DevOps, and creating intelligent processes in the IT industry. Eager to learn and excel in dynamic, team-oriented settings.
-author_email: "info@tiagosr.eu"
+author_bio: |
+  <div>
+   As an engineer, my mission is to creatively solve problems and drive technological advancement. <br />
+   Now I'm focused in DevOps and solutions architecture, but I've a background in Chemistry and industrial management engineering, which i use everyday to create value to society.<br />
+   <p style="text-align: center">⬇️ Check my life path below ⬇️</p>
+   </div>
+author_email: "mail@tiagosr.eu"
 author_location: Lisbon, Portugal  # Please provide your location
 author_website_url: "https://tiagosr.eu"
-typewrite-text: "Generating value through innovative solutions."
+typewrite-text: "As an engineer, my mission is to creatively solve problems and drive technological advancement!"
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover
 
 # Experiences
@@ -37,38 +42,91 @@ author_work_experiences:
               company_logo: novobanco.png  # Please provide the logo path
               company_url: novobanco.pt  # Please provide the URL
               designation: Systems Analyst  # Please provide your designation
-              description: Focusing on optimizing operational efficiency and maximizing client value in Cloud computing and DevOps.
+              description:   |
+                <div style="text-align: justify; font-size: 0.8rem; line-height: 1.6; margin-bottom: 20px;">
+                    <p>My path as systems Analyst, crossed 3 dimentions</p>
+                    <h3>Api Management</h3>
+                    <p>In API management, I dedicated myself to preparing infrastructure, ensuring technical standards were met, and enhancing
+                    team communication for effective API deployment. A standout achievement was my involvement in upgrading API governance,
+                    encompassing the integration of new tools and crafting of governance rules. This role refined my skills in
+                    collaboration, technical proficiency, and project management, crucial for ensuring seamless API operations across
+                    various departments.
+                        <br><strong>Relevant Soft Skills:</strong> Proactivity, Effective Communication, Teamwork, Analytical Thinking
+                        <br><strong>Relevant Hard Skills:</strong> IBM API Connect, OSI Model, TLS/SSL, API Security
+                    </p>
+
+                    <h3>Monitoring</h3>
+                    <p>
+
+                        As part of the monitoring team, my focus was on project management, process optimization, and specialist collaboration.
+                        My responsibilities included managing project timelines, fostering efficient workflows, and coordinating with technical
+                        experts to enhance system monitoring. My approach of enabling agile responses and quick decision-making significantly
+                        improved operational efficiency and system reliability.
+
+                        <br><strong>Relevant Soft Skills:</strong> Effective Communication, Teamwork, Critical Thinking, Leadership
+                        <br><strong>Relevant Hard Skills:</strong> CheckMk, Project Management, Networking,
+                    </p>
+
+                    <p>
+
+                    <h3>Automation</h3>
+                    <p>
+                    A significant personal achievement involved adapting Apache Airflow to our company's specific needs. This complex task
+                    required establishing governance for the infrastructure, deploying it in OpenShift with effective team segregation,
+                    managing secrets, and supervising code versioning. My efforts were instrumental in enhancing monitoring capabilities,
+                    improving workflow automation, and strengthening infrastructure management, significantly advancing our technological
+                    infrastructure and operational efficiency.
+
+
+                        <br><strong>Relevant Soft Skills:</strong> Effective Communication, Teamwork, Critical Thinking, Value Orientation
+                        <br><strong>Relevant Hard Skills:</strong> Airflow, Python programming, Project Management, Governance design
+                    </p>
+                    </p>
+                    <p>
+                </div>
               visibility: true
             - company_name: Novobanco
               company_logo: novobanco.png  # Please provide the logo path
               company_url: novobanco.pt  # Please provide the URL
               designation: Data Analyst  # Please provide your designation
-              description: Focusing on optimizing operational efficiency and maximizing client value in Cloud computing and DevOps.
+              description: |
+                <div style="text-align: justify; font-size: 0.8rem; line-height: 1.6; margin-bottom: 20px;">
+                    <p>My primary focus was on articulating functional requirements, crafting PL/SQL tests, and designing MicroStrategy
+                    dashboards. This multifaceted approach was pivotal in elevating data accuracy and delivering insightful analytics, thus
+                    empowering informed decision-making within the company.
+
+                        <br><strong>Relevant Soft Skills:</strong> Proactivity, Teamwork,  Analytical Thinking, Value Orientation
+                        <br><strong>Relevant Hard Skills:</strong> Oracle, PL/SQL, MicroStrategy
+                    </p>
+                </div>
               visibility: true
 # Education
 author_education_details:
               - college_logo: IST_Logo.png  # Please provide the logo path
                 college_name: Instituto Superior Técnico - Universidade de Lisboa  # Please provide the college name
                 college_url: https://tecnicomais.pt/cursos/engenharia-de-software-e-dos-sistemas-de-informacao-empresariais-sise/  # Please provide the URL
+                college_url_description: tecnicomais.pt/sise
                 college_degree: Postgraduation in Software and Information Systems Engineering  # Please provide your degree
                 description: 42 ECTS | Course focused on the management and operation of organizations from a systems engineering perspective.  # Please provide a description
                 visibility: true
               - college_logo: logo_ISEL_simplificado_cor.png  # Please provide the logo path
                 college_name: Instituto Superior de Engenharia de Lisboa  # Please provide the college name
                 college_url: https://www.isel.pt/en/curso/masters-degree/master-industrial-engineering-and-management  # Please provide the URL
+                college_url_description: isel/chem
                 college_degree: Industrial Engineering and Management MSc  # Please provide your degree
                 description: 120 ECTS | Integrated vision of production and services systems management, with focus in systems's design and collaborate in the creation, development, implementation, and improvement of integrated systems.  # Please provide a description
                 visibility: true
               - college_logo: logo_ISEL_simplificado_cor.png  # Please provide the logo path
                 college_name: Instituto Superior de Engenharia de Lisboa  # Please provide the college name
                 college_url: https://www.isel.pt/en/curso/bsc-degree/chemical-and-biological-engineeringt  # Please provide the URL
+                college_url_description: isel.pt/Industrial&Management
                 college_degree: Chemical and Biological Engineering BSc  # Please provide your degree
                 description: 180 ECTS | Chemical engineering elegantly combines mathematics and natural sciences to transform materials and nature's forces, aiming to enhance human life through innovative, practical solutions
                 visibility: true
 # Projects
 author_project_details:
-              - project_thumbnail: bullwhipcover.svg
-                project_title: Gamers Hub
+              - project_thumbnail: bullwhipcover.png
+                project_title: Bullwhip Simulator
                 project_description: Bullwhip effect simulation in complex distribution chains
                 project_url: https://github.com/TiagoSRodrigues/Bullwhip
                 visibility: true
@@ -95,7 +153,7 @@ show_author_education_details: true
 show_author_project_details: true
 
 # pagination of posts
-paginate: 4
+paginate: 8
 per_page: 4
 paginate_path: "/blog/page/:num/"
 
@@ -185,7 +243,7 @@ exclude:
   - vendor/ruby/
   - assets/bower_components/isotope-layout/README.md
   - assets/bower_components/icono/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-svg-core/README.md
+  # - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-svg-core/README.md
   - assets/bower_components/ghosthunter/README.md
   - assets/bower_components/nanobar/README.md
   - assets/bower_components/lightgallery/demo/README.md
@@ -193,17 +251,17 @@ exclude:
   - assets/bower_components/font-awesome/advanced-options/use-with-node-js/free-solid-svg-icons/README.md
   - assets/bower_components/jquery-mousewheel/README.md
   - assets/bower_components/get-size/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome/README.md
+  # - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome/README.md
   - assets/bower_components/jquery-mousewheel/ChangeLog/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-regular/README.md
+  # - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-regular/README.md
   - assets/bower_components/desandro-matches-selector/README.md
   - assets/bower_components/ev-emitter/README.md
   - assets/bower_components/font-awesome/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-solid/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-webfonts/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-brands/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-common-types/README.md
+  # - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-solid/README.md
+  # - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free/README.md
+  # - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-webfonts/README.md
+  # - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-brands/README.md
+  # - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-common-types/README.md
   - assets/bower_components/ghosthunter/example/Index.html
   - assets/bower_components/lightgallery/test/lightgallery.html
   - assets/bower_components/masonry-layout/README.md

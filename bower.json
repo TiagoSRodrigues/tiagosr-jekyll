@@ -1,17 +1,14 @@
 {
-  "name": "devlopr-jekyll",
-  "homepage": "https://github.com/sujaykundu777/devlopr-jekyll",
+  "name": "tiagosr",
+  "homepage": "https://github.com/TiagoSRodrigues/tiagosr",
   "authors": [
-    "sujaykundu777 <sujaykundu777@gmail.com>"
+    "tiagosr <mail@tiagosr.eu>"
   ],
-  "description": "A Jekyll Theme Built For Developers",
+  "description": "Tiago S Rodrigues Personal Page",
   "main": "",
   "keywords": [
-    "jekyll-theme",
-    "jekyll",
-    "gallery"
+
   ],
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",

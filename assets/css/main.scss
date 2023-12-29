@@ -4,21 +4,71 @@
 @charset "utf-8";
 
 @import "devlopr";
-
+/* custom css goes below */
 
 /* variables */
-$body-typeface: 'Quicksand', sans-serif;
+$body-typeface: "Quicksand", sans-serif;
 $nav-typeface: "Gill sans";
 $mono-typeface: Menlo, Monaco, monospace;
 $text-width: 650px;
 
-html[data-theme="dark"] {
+html[data-theme=dark] {
+  --bold-color: rgb(188, 188, 188);
+  --box-background-color: hsl(0, 0%, 20%);
+  --highlight-color: hsl(0, 0%, 60%);
+  --light-border-color: hsl(0, 0%, 30%);
+  --light-text-color: rgb(199, 199, 204);
+  --link-color: #f69801;
+  --link-color-visited: hsl(250, 100%, 60%);
+  --main-background-color: rgb(28, 28, 30);
+  --main-text-color: rgb(139, 139, 139);
+  --medium-text-color: hsl(0, 0%, 70%);
+  --underline-color: hsl(0, 0%, 50%);
+  --social-link-color: #ffffff;
+  --card-background-color: rgb(32, 32, 34);
+  --newsletter-background-color: #222324;
+  --button-background-color: #111;
+  --logo-color: #ffffff;
+  --Skills-card-background-color: #b1b1b1;
+
+}
+
+html,
+html[data-theme=light] {
+  --bold-color: rgb(0, 0, 0);
+  --box-background-color: rgb(249, 249, 250);
+  --highlight-color: hsl(0, 0%, 80%);
+  --light-border-color: rgb(230, 230, 230);
+  --light-text-color: rgb(72, 72, 74);
+  --link-color: rgb(0, 112, 201);
+  --link-color-visited: hsl(250, 100%, 37%);
+  --main-background-color: rgb(255, 255, 255);
+  --main-text-color: rgb(51, 51, 51);
+  --medium-text-color: hsl(0, 40%, 2%);
+  --sidebar-color: hsl(0, 0%, 90%);
+  --underline-color: hsl(0, 0%, 60%);
+  --social-link-color: #262222;
+  --card-background-color: rgb(250, 250, 250);
+  --newsletter-background-color: #00000008;
+  --button-background-color: #fff;
+  --logo-color: #17025c;
+  --Skills-card-background-color: #b1b1b1;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark Mode */
+  html,
+  html[data-theme=dark] {
     --bold-color: rgb(188, 188, 188);
     --box-background-color: hsl(0, 0%, 20%);
     --highlight-color: hsl(0, 0%, 60%);
     --light-border-color: hsl(0, 0%, 30%);
     --light-text-color: rgb(199, 199, 204);
     --link-color: #f69801;
+    --nav-color: #131313;
+    --search-color: #ff7901;
+    --nav-link-color: rgba(255, 255, 255, 0.5);
     --link-color-visited: hsl(250, 100%, 60%);
     --main-background-color: rgb(28, 28, 30);
     --main-text-color: rgb(139, 139, 139);
@@ -28,84 +78,287 @@ html[data-theme="dark"] {
     --card-background-color: rgb(32, 32, 34);
     --newsletter-background-color: #222324;
     --button-background-color: #111;
-}
+    --Skills-card-background-color: #b1b1b1;
 
-html,
-html[data-theme="light"] {
+  }
+  /* Light Mode */
+  html[data-theme=light] {
     --bold-color: rgb(0, 0, 0);
     --box-background-color: rgb(249, 249, 250);
     --highlight-color: hsl(0, 0%, 80%);
     --light-border-color: rgb(230, 230, 230);
     --light-text-color: rgb(72, 72, 74);
-    --link-color: rgb(0, 112, 201);
+    --link-color: #ca6521;
+    --nav-color: #ffffff;
+    --nav-link-color: #111111;
+    --search-color: #ababab;
     --link-color-visited: hsl(250, 100%, 37%);
     --main-background-color: rgb(255, 255, 255);
     --main-text-color: rgb(51, 51, 51);
-    --medium-text-color: hsl(0, 40%, 2%);
+    --medium-text-color: hsl(0, 0%, 20%);
     --sidebar-color: hsl(0, 0%, 90%);
     --underline-color: hsl(0, 0%, 60%);
     --social-link-color: #262222;
     --card-background-color: rgb(250, 250, 250);
-    --newsletter-background-color: #00000008;
+    --Skills-card-background-color: #b1b1b1;
     --button-background-color: #fff;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
 
-    /* Dark Mode */
-    html,
-    html[data-theme="dark"] {
-        --bold-color: rgb(188, 188, 188);
-        --box-background-color: hsl(0, 0%, 20%);
-        --highlight-color: hsl(0, 0%, 60%);
-        --light-border-color: hsl(0, 0%, 30%);
-        --light-text-color: rgb(199, 199, 204);
-        --link-color: #f69801;
-        --nav-color: #131313;
-        --search-color: #FF7901;
-        --nav-link-color: rgba(255, 255, 255, .5);
-        --link-color-visited: hsl(250, 100%, 60%);
-        --main-background-color: rgb(28, 28, 30);
-        --main-text-color: rgb(139, 139, 139);
-        --medium-text-color: hsl(0, 0%, 70%);
-        --underline-color: hsl(0, 0%, 50%);
-        --social-link-color: #ffffff;
-        --card-background-color: rgb(32, 32, 34);
-        --newsletter-background-color: #222324;
-        --button-background-color: #111;
+
+/*body*/
+body {
+    background-color: var(--main-background-color) !important;
+    color: var(--main-text-color) !important;
+    font-family: 'Quicksand', sans-serif !important;
+    font-feature-settings: "kern"on;
+    font-size: 1rem;
+    font-variant-numeric: oldstyle-nums;
+    hanging-punctuation: first last;
+    height: 100%;
+    line-height: 1.35em;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    padding-top:33px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
+/* navbar */
+#navbar-hamburger,
+#navbar-search {
+  color: var(--bold-color) !important;
+}
+
+
+.navbar-dark .navbar-brand {
+  color: var(--logo-color) !important;
+  font-size: 1.5rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--nav-link-color) !important;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: transparent !important;
+}
+
+.navbar-brand-img {
+  width: 50px;
+  height: 50px;
+}
+
+.theme-toggle {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+
+
+.skills-card-images{
+    background-color: #b1b1b1;
+    border-radius: 10px;
+}
+
+
+/* blog */
+
+
+/* Homepage project cards*/
+
+#project-card{
+    margin: 0px !important;
+}
+#article{
+    margin-left: 35px !important;
+    margin-top: 20px !important;
+}
+.project_thumbnail{
+    text-align: center;
+}
+.project-img{
+    width:150px;
+    height:100px;
+}
+.project_details{
+    padding: 10px;
+}
+.project_links {
+    margin: 4px;
+    padding-top: 32px;
+    padding-left: 50px !important;
+}
+
+// #blog-posts-container{
+//     margin-left:20px !important;
+// }
+
+
+.card-img-top{
+  max-height: 50px;
+}
+#article-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 50fr 4fr;
+}
+
+#recent-articles,#recent-projects{
+    margin-top: 100px !important;
+}
+
+#recent-articles-header{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 17fr 2fr;
+}
+
+#article-img, #article-link, #article-alert {
+    padding-left: 5px;
+    padding-top: 2px;
+    margin: 5px;
+}
+.recent-article-link{
+    font-size: 20px;
+    text-decoration: none;
+}
+.article-card-link, .article-card-link:hover{
+    text-decoration: none;
+    color: orange !important;
+}
+.article-card{
+    list-style-type: none;
+}
+.article-card a :hover{
+    text-decoration: none;
+    background: #303030!important;
+    border-color: #303030;
+    background: transparent;
+}
+
+
+#profile-card {
+    text-align: center;
+    #author-img{
+        text-align: center;
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+        border-radius: 50%;
+    }
+    .profile-name {
+        margin-top: 20px;
+    }
+    .profile-bio,
+    .profile-links {
+        margin-top: 5px;
+    }
+    .social-link {
+        color: var(--social-link-color) !important;
+        font-size: 15px;
+        padding: 5px;
+        margin: 2px;
+        text-decoration: none !important;
+    }
+    #header-nav{
+        float: right;
+        margin-inline-start: 45px;
+    }
+    #navigation{
+        margin-top:50px;
+    }
+    .nav-link {
+        font-size: 15px !important;
+        color: var(--main-text-color);
+        font-weight: 600;
     }
 
-    /* Light Mode */
-    html[data-theme="light"] {
-        --bold-color: rgb(0, 0, 0);
-        --box-background-color: rgb(249, 249, 250);
-        --highlight-color: hsl(0, 0%, 80%);
-        --light-border-color: rgb(230, 230, 230);
-        --light-text-color: rgb(72, 72, 74);
-        --link-color: #ca6521;
-        --nav-color: #ffffff;
-        --nav-link-color: #111111;
-        --search-color: #ababab;
-        --link-color-visited: hsl(250, 100%, 37%);
-        --main-background-color: rgb(255, 255, 255);
-        --main-text-color: rgb(51, 51, 51);
-        --medium-text-color: hsl(0, 0%, 20%);
-        --sidebar-color: hsl(0, 0%, 90%);
-        --underline-color: hsl(0, 0%, 60%);
-        --social-link-color: #262222;
-        --card-background-color: rgb(250, 250, 250);
-        --button-background-color: #fff;
+}
+
+#author_projects {
+    .project-img {
+        width: 300px;
+        height: 200px;
+    }
+    #project-card{
+        margin-top:30px;
+    }
+    .project-link{
+        color: var(--link-color);
     }
 }
 
 
-
-/* custom css goes below */
-footer {
-    background-color: var(--main-background-color);
-    color: var(--main-text-color);
+.company-logo {
+    width: 100px;
+    height: 100px;
 }
-footer img {
-    width: 1rem;
+
+.author-profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.blog-post {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    width: 45%;
     height: auto;
+    margin: 20px auto !important;
+}
+
+.blog-post:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+#newsletter_footer {
+    background-color: var(--newsletter-background-color);
+    color: var(--main-text-color);
+    text-align: center;
+    margin-top: 100px;
+}
+
+    #mc-embedded-subscribe-form {
+        width: 100%;
+        padding: 50px;
+    }
+
+    #mc_embed_signup_scroll_footer {
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    #mce-EMAIL_footer {
+        width: 400px;
+        padding: 14px;
+        color: #111;
+        border-color: #111;
+        background: bisque;
+        text-align: center;
+        text-transform: capitalize;
+        border: 1px solid #fff;
+    }
+
+    #mc-embedded-subscribe_footer {
+        margin-top: 30px;
+    }
+
+
+
+ /* footer */
+footer {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+}
+
+footer img {
+  width: 1rem;
+  height: auto;
 }
