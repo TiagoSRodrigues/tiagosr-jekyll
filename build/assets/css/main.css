@@ -1433,6 +1433,28 @@ body {
   overflow-y: scroll;
 }
 
+/*hero*/
+/* change cover_img in config.yml */
+.jumbotron {
+  /*background-color: var(--main-background-color) !important;
+  background-image: url('/assets/img/bkg.jpg');*/
+  background-color: rgb(82, 0, 0) !important;
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
+}
+
+.jumbotron-btns {
+  display: block;
+  margin-top: 50px;
+}
+
+.jumbotron-heading, .lead {
+  color: #fff;
+}
+
 /* navbar */
 #navbar-hamburger,
 #navbar-search {

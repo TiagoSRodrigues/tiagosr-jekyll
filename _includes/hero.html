@@ -1,29 +1,7 @@
-<style>
-/* change cover_img in config.yml */
-.jumbotron {
-    /*background-color: var(--main-background-color) !important;
-    background-image: url('/assets/img/{{site.hero_cover_img}}');*/
-    background-color: rgb(82 0 0) !important;
-    text-align: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(10px);
-
-}
-.jumbotron-btns {
-  display: block;
-  margin-top: 50px;
-}
-
-.jumbotron-heading, .lead {
-  color: #fff;
-}
-</style>
 
 <!-- home hero section -->
 <div class="jumbotron">
-  <img class="author-profile-img" src="{{site.url}}{{site.baseurl}}/assets/img/{{site.author_logo}}" />
+  <img class="author-profile-img" src="{{site.url}}{{site.baseurl}}/assets/img/{{site.author_logo}}" alt="author profile image" />
   <p class="jumbotron-heading">Hi, I am {{site.author}} !</p>
 
   <p class="lead" id="typewriteText"></p>
@@ -37,4 +15,5 @@
       <button class="btn btn-md btn-default"> My notes </button>
      </a>
   </div>
+
 </div>

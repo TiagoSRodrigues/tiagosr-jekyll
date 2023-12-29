@@ -196,32 +196,10 @@
     });
   });
 </script>
-    <!-- hero section--><style>
-/* change cover_img in config.yml */
-.jumbotron {
-    /*background-color: var(--main-background-color) !important;
-    background-image: url('/assets/img/bkg.jpg');*/
-    background-color: rgb(82 0 0) !important;
-    text-align: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(10px);
-
-}
-.jumbotron-btns {
-  display: block;
-  margin-top: 50px;
-}
-
-.jumbotron-heading, .lead {
-  color: #fff;
-}
-</style>
-
+    <!-- hero section-->
 <!-- home hero section -->
 <div class="jumbotron">
-  <img class="author-profile-img" src="http://localhost:4000/assets/img/avatar.png" />
+  <img class="author-profile-img" src="http://localhost:4000/assets/img/avatar.png" alt="author profile image" />
   <p class="jumbotron-heading">Hi, I am Tiago S Rodrigues !</p>
 
   <p class="lead" id="typewriteText"></p>
@@ -235,6 +213,7 @@
       <button class="btn btn-md btn-default"> My notes </button>
      </a>
   </div>
+
 </div><div class="col-lg-8 offset-md-2"><section id="recent-articles">
   <div id="recent-articles-header">
     <div id="recent-articles-title">
@@ -390,14 +369,17 @@
     </div>
 </div>-->
 </div><footer>
-    <p> Made with &#10084; and ☕
+    <div> Made with &#10084; and ☕
  by <a href="https://github.com/TiagoSRodrigues">Tiago Rodrigues</a>.
         <img src="/assets/img/github_git_icon_145985.svg">
         <a href="https://github.com/TiagoSRodrigues/tiagosr" target="_blank">Version: 1.1.3</a>
         <!-- Subscribe via
         <a href=" /feed.xml ">RSS</a>-->
+    <div style="text-align: center; font-size: 0.7rem;">
+        This page is more than an introduction, it's a dynamic lab for testing new techniques. <br>
+        Any formatting issues are part of this experimental process.<a href="tiagosr.eu/contacts">Your feedback is always welcome and valued.</a>
+    </div>
 
-    </p>
 </footer>
 <script>
             var options = {
