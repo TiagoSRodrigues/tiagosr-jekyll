@@ -34,7 +34,7 @@ author_email: "mail@tiagosr.eu"
 author_location: Lisbon, Portugal  # Please provide your location
 author_website_url: "https://tiagosr.eu"
 typewrite-text: "As an engineer, my mission is to creatively solve problems and drive technological advancement!"
-hero_cover_img: sample_cover.jpg # replace this for changing homepage cover
+hero_cover_img: bkg.jpg # replace this for changing homepage cover
 
 # Experiences
 author_work_experiences:
