@@ -2,13 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tiago S Rodrigues</title>
-    <description>I&apos;m a Systems Engineer, focusing on operational efficiency and client value. My expertise encompasses project management, strategic planning, and innovative problem-solving. 
-I am committed to professional growth, advocating for intelligent processes to create a more efficient society. Write an awesome description for your new site here.
+    <description>Engineering, is the art of solving problems!
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 29 Dec 2023 10:43:44 +0000</pubDate>
-    <lastBuildDate>Fri, 29 Dec 2023 10:43:44 +0000</lastBuildDate>
+    <link>https://tiagosr.eu/</link>
+    <atom:link href="https://tiagosr.eu/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 29 Dec 2023 14:09:54 +0000</pubDate>
+    <lastBuildDate>Fri, 29 Dec 2023 14:09:54 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
 
     
@@ -400,8 +399,8 @@ I am committed to professional growth, advocating for intelligent processes to c
 &lt;/table&gt;
 </description>
         <pubDate>Tue, 26 Dec 2023 21:33:05 +0000</pubDate>
-        <link>http://localhost:4000/blog/linux-terminal</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/linux-terminal</guid>
+        <link>https://tiagosr.eu/blog/linux-terminal</link>
+        <guid isPermaLink="true">https://tiagosr.eu/blog/linux-terminal</guid>
       </item>
     
       <item>
@@ -656,8 +655,8 @@ I am committed to professional growth, advocating for intelligent processes to c
 &lt;/table&gt;
 </description>
         <pubDate>Tue, 26 Dec 2023 21:33:05 +0000</pubDate>
-        <link>http://localhost:4000/blog/cli</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/cli</guid>
+        <link>https://tiagosr.eu/blog/cli</link>
+        <guid isPermaLink="true">https://tiagosr.eu/blog/cli</guid>
       </item>
     
       <item>
@@ -699,8 +698,8 @@ I am committed to professional growth, advocating for intelligent processes to c
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:4000/blog/categories/your_category_name&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 27 Feb 2021 20:05:23 +0000</pubDate>
-        <link>http://localhost:4000/blog/adding-categories-tags-in-posts/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/adding-categories-tags-in-posts/</guid>
+        <link>https://tiagosr.eu/blog/adding-categories-tags-in-posts/</link>
+        <guid isPermaLink="true">https://tiagosr.eu/blog/adding-categories-tags-in-posts/</guid>
       </item>
     
       <item>
@@ -833,8 +832,8 @@ I am committed to professional growth, advocating for intelligent processes to c
 
 </description>
         <pubDate>Sat, 24 Oct 2020 21:05:23 +0100</pubDate>
-        <link>http://localhost:4000/blog/added-multi-author-support/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/added-multi-author-support/</guid>
+        <link>https://tiagosr.eu/blog/added-multi-author-support/</link>
+        <guid isPermaLink="true">https://tiagosr.eu/blog/added-multi-author-support/</guid>
       </item>
     
       <item>
@@ -866,8 +865,8 @@ I am committed to professional growth, advocating for intelligent processes to c
 \[k_{n+1} = n^2 + k_n^2 - k_{n-1}\]
 </description>
         <pubDate>Sat, 24 Oct 2020 06:05:23 +0100</pubDate>
-        <link>http://localhost:4000/blog/added-latex-equations-support/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/added-latex-equations-support/</guid>
+        <link>https://tiagosr.eu/blog/added-latex-equations-support/</link>
+        <guid isPermaLink="true">https://tiagosr.eu/blog/added-latex-equations-support/</guid>
       </item>
     
       <item>
@@ -903,8 +902,8 @@ I am committed to professional growth, advocating for intelligent processes to c
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sat, 23 May 2020 10:52:20 +0100</pubDate>
-        <link>http://localhost:4000/blog/using-netlify-cms/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/using-netlify-cms/</guid>
+        <link>https://tiagosr.eu/blog/using-netlify-cms/</link>
+        <guid isPermaLink="true">https://tiagosr.eu/blog/using-netlify-cms/</guid>
       </item>
     
       <item>
@@ -932,8 +931,8 @@ I am committed to professional growth, advocating for intelligent processes to c
 
 </description>
         <pubDate>Wed, 22 May 2019 10:05:23 +0100</pubDate>
-        <link>http://localhost:4000/blog/welcome-to-devlopr-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/welcome-to-devlopr-jekyll/</guid>
+        <link>https://tiagosr.eu/blog/welcome-to-devlopr-jekyll/</link>
+        <guid isPermaLink="true">https://tiagosr.eu/blog/welcome-to-devlopr-jekyll/</guid>
       </item>
     
       <item>
@@ -1140,8 +1139,8 @@ I am committed to professional growth, advocating for intelligent processes to c
 
 </description>
         <pubDate>Tue, 26 Dec 2000 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/styleguide</link>
-        <guid isPermaLink="true">http://localhost:4000/styleguide</guid>
+        <link>https://tiagosr.eu/styleguide</link>
+        <guid isPermaLink="true">https://tiagosr.eu/styleguide</guid>
       </item>
     
 
@@ -1286,7 +1285,7 @@ I am committed to professional growth, advocating for intelligent processes to c
 &lt;/div&gt;
 
 </description>
-            <link>http://localhost:4000/blog/categories/</link>
+            <link>https://tiagosr.eu/blog/categories/</link>
           </item>
         
       
@@ -1306,7 +1305,7 @@ I am committed to professional growth, advocating for intelligent processes to c
  &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
 {% endfor %}
 &lt;/div&gt;</description>
-            <link>http://localhost:4000/blog/categories/guides/</link>
+            <link>https://tiagosr.eu/blog/categories/guides/</link>
           </item>
         
       
@@ -1326,7 +1325,7 @@ I am committed to professional growth, advocating for intelligent processes to c
  &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
 {% endfor %}
 &lt;/div&gt;</description>
-            <link>http://localhost:4000/blog/categories/jekyll/</link>
+            <link>https://tiagosr.eu/blog/categories/jekyll/</link>
           </item>
         
       
@@ -1344,7 +1343,7 @@ I am committed to professional growth, advocating for intelligent processes to c
  &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
 {% endfor %}
 &lt;/div&gt;</description>
-            <link>http://localhost:4000/blog/categories/sample_category/</link>
+            <link>https://tiagosr.eu/blog/categories/sample_category/</link>
           </item>
         
       
