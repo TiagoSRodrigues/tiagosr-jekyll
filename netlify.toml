@@ -1,5 +1,5 @@
 [build]
-  command = "jekyll build --verbose"
+  command = "jekyll build --incremental --verbose"
   publish = "build"
 
 [build.environment]
