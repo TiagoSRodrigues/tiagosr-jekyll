@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://tiagosr.eu/blog/authors/tiagosr</loc>
-<lastmod>2023-12-29T16:46:34+00:00</lastmod>
+<lastmod>2023-12-29T16:59:08+00:00</lastmod>
 </url>
 <url>
 <loc>https://tiagosr.eu/styleguide</loc>
@@ -43,13 +43,13 @@
 <loc>https://tiagosr.eu/blog/categories/</loc>
 </url>
 <url>
-<loc>https://tiagosr.eu/blog/categories/</loc>
+<loc>https://tiagosr.eu/blog/categories/cheatsheets</loc>
 </url>
 <url>
 <loc>https://tiagosr.eu/contact/</loc>
 </url>
 <url>
-<loc>https://tiagosr.eu/blog/categories/</loc>
+<loc>https://tiagosr.eu/blog/categories/devops</loc>
 </url>
 <url>
 <loc>https://tiagosr.eu/blog/categories/guides/</loc>

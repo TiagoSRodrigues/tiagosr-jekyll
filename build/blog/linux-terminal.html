@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang=" en "><head>
+  <meta charset="utf-8" />
+  <title>
+    Linux Terminal Cheat Sheet - Tiago S Rodrigues
+  </title>
+  <meta http-equip="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+   <meta name="keywords" content="Linux Terminal Cheat Sheet, Tiago S Rodrigues, cheetsheets, devops,"/>
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="RSS"
+    href="/feed.xml"
+  />
+  <meta content="" property="fb:app_id" />
+  <meta content="Tiago S Rodrigues" property="og:site_name" />
+   
+  <meta content="Linux Terminal Cheat Sheet" property="og:title" />
+  <meta content="article" property="og:type" />
+   
+  <meta content="Engineering, is the art of solving problems!
+" property="og:description" />
+   
+  <meta content="https://tiagosr.eu/blog/linux-terminal" property="og:url" />
+   
+  <meta
+    content="2023-12-26T21:33:05+00:00"
+    property="article:published_time"
+  />
+  <meta content="https://tiagosr.eu/about/" property="article:author" />
+   
+  <meta content="https://tiagosr.eu/assets/img/posts/default-img.jpg" property="og:image" />
+    
+  <meta content="cheetsheets" property="article:section" />
+      
+
+  <link rel="stylesheet" href="https://tiagosr.eu/assets/css/main.css" />
+  <!-- <link rel="stylesheet" href="https://tiagosr.eu/assets/css/custom-style.css" /> -->
+  <link
+    rel="stylesheet"
+    href="https://tiagosr.eu/assets/bower_components/lightgallery/dist/css/lightgallery.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://tiagosr.eu/assets/bower_components/bootstrap/dist/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://tiagosr.eu/assets/bower_components/icono/dist/icono.min.css"
+  />
+  <!-- Fonts-->
+  <link
+    href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    href="https://tiagosr.eu/assets/img/favicon.png"
+    type="image/gif"
+    sizes="16x16"
+  />
+  <script>
+      var base_url = 'https://tiagosr.eu' ;
+   </script>
+
+  <!-- Jquery -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <script src="https://tiagosr.eu/assets/bower_components/jquery/dist/jquery.min.js"></script> -->
+  <script src="https://tiagosr.eu/assets/js/mode-switcher.js"></script>
+  <script src="https://tiagosr.eu/assets/bower_components/jquery.easing/jquery.easing.min.js"></script>
+  <script src="https://tiagosr.eu/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://tiagosr.eu/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+  <script src="https://tiagosr.eu/assets/bower_components/ghosthunter/dist/jquery.ghostHunter.min.js"></script>
+  <script src="https://tiagosr.eu/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script>
+  <script src="https://tiagosr.eu/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="https://tiagosr.eu/assets/bower_components/nanobar/nanobar.min.js"></script>
+  <script src="https://tiagosr.eu/assets/bower_components/typewrite/dist/typewrite.min.js"></script>
+  <script src="https://tiagosr.eu/assets/js/search.js"></script>
+  <script src="https://tiagosr.eu/assets/js/on-scroll-progress.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+ <!-- for Mathjax support -->
+  
+
+  <!-- Github Button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+
+
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="topNav">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icono-hamburger" id="navbar-hamburger"> </span>
+          </button>
+          <a class="navbar-brand" href="/">Tiago S Rodrigues</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://tiagosr.eu/"
+                  >Home</a
+                >
+              </li>
+              
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://tiagosr.eu/about"
+                  >About</a
+                >
+              </li>
+              
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://tiagosr.eu/blog"
+                  >Blog</a
+                >
+              </li>
+              
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://tiagosr.eu/contact"
+                  >Contact</a
+                >
+              </li>
+              
+
+            </ul>
+          </div>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link toggle-search-button" href="#search">
+                <img src="/assets/img/magnifying_glass.svg" alt="magnifying glass" style="max-height: 2rem;">
+              </a>
+            </li>
+
+            <li class="nav-item"> 
+              <input
+                class="nav-link switch theme-toggle"
+                type="checkbox"
+                name="checkbox"
+              />
+            </li>
+          </ul>
+        </nav>
+        <div id="progress-bar"></div>
+        <!-- Search Form -->
+        <div class="search-form-container">
+
+          <form class="search-form">
+            <fieldset class="search-form__fieldset">
+              <div class="row">
+                <div class="col-lg-8 offset-md-2">
+                  <input class="search-form__field" placeholder="Type to Search..." autofocus>
+                  <input class="search-form__submit" type="submit" value="search">
+                </div>
+              </div>
+            </fieldset>
+          </form>
+
+          <div class="row">
+            <div class="col-lg-8 offset-md-2 search-results">
+              <div class="card search-results"></div>
+            </div>
+          </div>
+
+          <div class="close-search-button search-form-container__close">
+              <i class="fa fa-times icon"></i>
+          </div>
+        </div><div class="main-container">
+            <div class="row justify-content-center" id="blog-post-container">
+  <div class="col-lg-10"><article class="card" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="card-header">
+    <h1 class="post-title" itemprop="name headline">Linux Terminal Cheat Sheet</h1>
+    <h4 class="post-meta"></h4>
+    <p class="post-summary">
+      Posted by :  on
+      <time datetime="2023-12-26 21:33:05 +0000" itemprop="datePublished"
+        >Dec 26, 2023</time
+      >
+    </p>
+    <span
+      class="disqus-comment-count"
+      data-disqus-identifier="/blog/linux-terminal"
+    ></span>
+    <div class="post-categories">
+       Category : 
+      <a href="/blog/categories/cheetsheets"
+        >cheetsheets</a
+      >
+      &nbsp; 
+      <a href="/blog/categories/devops"
+        >devops</a
+      >
+       
+    </div>
+  </div>
+
+  <div class="card-body" itemprop="articleBody">
+    <img
+      class="card-img-top"
+      src="https://tiagosr.eu/assets/img/posts/default-img.jpg"
+      alt=""
+    />
+    <br />
+    <br />
+    <h2 id="cli-useful-command">CLi useful command</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>OS</th>
+      <th>Utility Meaning</th>
+      <th>Command</th>
+      <th>Description</th>
+      <th>Example</th>
+      <th>Example Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Linux</td>
+      <td>List Block Devices</td>
+      <td><code class="language-plaintext highlighter-rouge">lsblk</code></td>
+      <td>Lists all block devices with their names, sizes, and mounts</td>
+      <td><code class="language-plaintext highlighter-rouge">lsblk</code></td>
+      <td>Lists all block devices and their information</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Disk Free</td>
+      <td><code class="language-plaintext highlighter-rouge">df</code></td>
+      <td>Shows disk space used and available on filesystems</td>
+      <td><code class="language-plaintext highlighter-rouge">df -h</code></td>
+      <td>Shows human-readable disk space usage</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Display Message</td>
+      <td><code class="language-plaintext highlighter-rouge">dmesg</code></td>
+      <td>Displays kernel-related messages</td>
+      <td><code class="language-plaintext highlighter-rouge">dmesg \| tail</code></td>
+      <td>Shows the last few kernel messages</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>SMART Control</td>
+      <td><code class="language-plaintext highlighter-rouge">smartctl</code></td>
+      <td>Checks health of physical drives</td>
+      <td><code class="language-plaintext highlighter-rouge">sudo smartctl -a /dev/sda</code></td>
+      <td>Checks SMART data of <code class="language-plaintext highlighter-rouge">/dev/sda</code></td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>File System Check</td>
+      <td><code class="language-plaintext highlighter-rouge">fsck</code></td>
+      <td>Checks and repairs filesystem inconsistencies</td>
+      <td><code class="language-plaintext highlighter-rouge">sudo fsck /dev/sda1</code></td>
+      <td>Checks and repairs filesystem on <code class="language-plaintext highlighter-rouge">/dev/sda1</code></td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Mount</td>
+      <td><code class="language-plaintext highlighter-rouge">mount</code></td>
+      <td>Mounts a filesystem</td>
+      <td><code class="language-plaintext highlighter-rouge">sudo mount /dev/sda1 /mnt/mydrive</code></td>
+      <td>Mounts <code class="language-plaintext highlighter-rouge">/dev/sda1</code> to <code class="language-plaintext highlighter-rouge">/mnt/mydrive</code></td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Unmount</td>
+      <td><code class="language-plaintext highlighter-rouge">umount</code></td>
+      <td>Unmounts a filesystem</td>
+      <td><code class="language-plaintext highlighter-rouge">sudo umount /mnt/mydrive</code></td>
+      <td>Unmounts <code class="language-plaintext highlighter-rouge">/mnt/mydrive</code></td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>List</td>
+      <td><code class="language-plaintext highlighter-rouge">ls</code></td>
+      <td>Lists files and directories in a directory</td>
+      <td><code class="language-plaintext highlighter-rouge">ls -la /mnt</code></td>
+      <td>Lists all files and directories in <code class="language-plaintext highlighter-rouge">/mnt</code> with details</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Secure Copy</td>
+      <td><code class="language-plaintext highlighter-rouge">scp</code></td>
+      <td>Copies files over a network securely</td>
+      <td><code class="language-plaintext highlighter-rouge">scp file.txt remote_user@remote_host:/remote/dir</code></td>
+      <td>Copies <code class="language-plaintext highlighter-rouge">file.txt</code> to a remote directory</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Global Regular Express</td>
+      <td><code class="language-plaintext highlighter-rouge">grep</code></td>
+      <td>Searches for patterns in files</td>
+      <td><code class="language-plaintext highlighter-rouge">grep 'pattern' filename</code></td>
+      <td>Searches ‘filename’ for ‘pattern’</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>AWK Scripting lang</td>
+      <td><code class="language-plaintext highlighter-rouge">awk</code></td>
+      <td>Processes and analyzes text files</td>
+      <td><code class="language-plaintext highlighter-rouge">awk '{print $1}' filename</code></td>
+      <td>Prints the first column of ‘filename’</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Stream Editor</td>
+      <td><code class="language-plaintext highlighter-rouge">sed</code></td>
+      <td>Edits and transforms text in a stream</td>
+      <td><code class="language-plaintext highlighter-rouge">sed 's/old/new/' filename</code></td>
+      <td>Replaces ‘old’ with ‘new’ in ‘filename’</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Client URL</td>
+      <td><code class="language-plaintext highlighter-rouge">curl</code></td>
+      <td>Transfers data from or to a server</td>
+      <td><code class="language-plaintext highlighter-rouge">curl http://example.com</code></td>
+      <td>Fetches the content of a web page</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Web Get</td>
+      <td><code class="language-plaintext highlighter-rouge">wget</code></td>
+      <td>Downloads files from the web</td>
+      <td><code class="language-plaintext highlighter-rouge">wget http://example.com/file</code></td>
+      <td>Downloads ‘file’ from the specified URL</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Tape Archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar</code></td>
+      <td>Compresses and archives files</td>
+      <td><code class="language-plaintext highlighter-rouge">tar cvzf archive.tar.gz /path/to/dir</code></td>
+      <td>Creates a gzipped tar archive of a directory</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Secure Shell</td>
+      <td><code class="language-plaintext highlighter-rouge">ssh</code></td>
+      <td>Connects to remote servers securely</td>
+      <td><code class="language-plaintext highlighter-rouge">ssh user@remotehost</code></td>
+      <td>Connects to ‘remotehost’ as ‘user’</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>IP Tables</td>
+      <td><code class="language-plaintext highlighter-rouge">iptables</code></td>
+      <td>Configures Linux kernel firewall</td>
+      <td><code class="language-plaintext highlighter-rouge">iptables -L</code></td>
+      <td>Lists all current firewall rules</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>List Directories</td>
+      <td><code class="language-plaintext highlighter-rouge">ls -l</code></td>
+      <td>Lists directory contents</td>
+      <td><code class="language-plaintext highlighter-rouge">ls -l /path/to/dir</code></td>
+      <td>Lists the contents of a directory</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Change Directory</td>
+      <td><code class="language-plaintext highlighter-rouge">cd</code></td>
+      <td>Changes the current directory</td>
+      <td><code class="language-plaintext highlighter-rouge">cd /path/to/dir</code></td>
+      <td>Changes to the specified directory</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Copy Files</td>
+      <td><code class="language-plaintext highlighter-rouge">cp</code></td>
+      <td>Copies files and directories</td>
+      <td><code class="language-plaintext highlighter-rouge">cp source.txt dest.txt</code></td>
+      <td>Copies ‘source.txt’ to ‘dest.txt’</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Move/Rename Files</td>
+      <td><code class="language-plaintext highlighter-rouge">mv</code></td>
+      <td>Moves/renames files and directories</td>
+      <td><code class="language-plaintext highlighter-rouge">mv old.txt new.txt</code></td>
+      <td>Renames ‘old.txt’ to ‘new.txt’</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Remove Files</td>
+      <td><code class="language-plaintext highlighter-rouge">rm</code></td>
+      <td>Removes files and directories</td>
+      <td><code class="language-plaintext highlighter-rouge">rm file.txt</code></td>
+      <td>Removes ‘file.txt’</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Display File Content</td>
+      <td><code class="language-plaintext highlighter-rouge">cat</code></td>
+      <td>Concatenates and displays file content</td>
+      <td><code class="language-plaintext highlighter-rouge">cat file.txt</code></td>
+      <td>Displays the content of ‘file.txt’</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Find Files</td>
+      <td><code class="language-plaintext highlighter-rouge">find</code></td>
+      <td>Searches for files in a directory hierarchy</td>
+      <td><code class="language-plaintext highlighter-rouge">find / -name filename</code></td>
+      <td>Finds files named ‘filename’</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Display Disk Usage</td>
+      <td><code class="language-plaintext highlighter-rouge">du</code></td>
+      <td>Estimates file space usage</td>
+      <td><code class="language-plaintext highlighter-rouge">du -sh /path/to/dir</code></td>
+      <td>Shows disk usage of the specified directory</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Disk Free</td>
+      <td><code class="language-plaintext highlighter-rouge">df</code></td>
+      <td>Reports file system disk space usage</td>
+      <td><code class="language-plaintext highlighter-rouge">df -h</code></td>
+      <td>Shows human-readable disk space usage</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Process Status</td>
+      <td><code class="language-plaintext highlighter-rouge">ps</code></td>
+      <td>Reports a snapshot of current processes</td>
+      <td><code class="language-plaintext highlighter-rouge">ps aux</code></td>
+      <td>Shows all running processes</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Kill Process</td>
+      <td><code class="language-plaintext highlighter-rouge">kill</code></td>
+      <td>Sends a signal to a process</td>
+      <td><code class="language-plaintext highlighter-rouge">kill -9 PID</code></td>
+      <td>Kills the process with the specified PID</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Network Interfaces</td>
+      <td><code class="language-plaintext highlighter-rouge">ifconfig</code></td>
+      <td>Configures network interfaces</td>
+      <td><code class="language-plaintext highlighter-rouge">ifconfig eth0</code></td>
+      <td>Displays information about ‘eth0’ interface</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Display Messages</td>
+      <td><code class="language-plaintext highlighter-rouge">dmesg</code></td>
+      <td>Displays kernel messages</td>
+      <td><code class="language-plaintext highlighter-rouge">dmesg \| grep usb</code></td>
+      <td>Filters and displays USB-related kernel messages</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Stream Editor</td>
+      <td><code class="language-plaintext highlighter-rouge">sed</code></td>
+      <td>Stream editor for filtering and transforming text</td>
+      <td><code class="language-plaintext highlighter-rouge">sed 's/old/new/' file</code></td>
+      <td>Replaces ‘old’ with ‘new’ in ‘file’</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -cf</code></td>
+      <td>Create a tar archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -cf archive.tar /path/to/dir</code></td>
+      <td>Creates a tar archive named <code class="language-plaintext highlighter-rouge">archive.tar</code> of <code class="language-plaintext highlighter-rouge">/path/to/dir</code></td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -xf</code></td>
+      <td>Extract files from a tar archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -xf archive.tar</code></td>
+      <td>Extracts files from <code class="language-plaintext highlighter-rouge">archive.tar</code></td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -czf</code></td>
+      <td>Create a gzip compressed tar archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -czf archive.tar.gz /path/to/dir</code></td>
+      <td>Creates a compressed tar archive with gzip</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -xzf</code></td>
+      <td>Extract a gzip compressed tar archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -xzf archive.tar.gz</code></td>
+      <td>Extracts files from a gzip compressed tar archive</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -cjf</code></td>
+      <td>Create a bzip2 compressed tar archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -cjf archive.tar.bz2 /path/to/dir</code></td>
+      <td>Creates a compressed tar archive with bzip2</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -xjf</code></td>
+      <td>Extract a bzip2 compressed tar archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -xjf archive.tar.bz2</code></td>
+      <td>Extracts files from a bzip2 compressed tar archive</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -tvf</code></td>
+      <td>List the contents of a tar archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -tvf archive.tar</code></td>
+      <td>Lists the contents of <code class="language-plaintext highlighter-rouge">archive.tar</code> without extracting them</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -czvf</code></td>
+      <td>Create a gzip compressed tar archive with verbose</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -czvf archive.tar.gz /path/to/dir</code></td>
+      <td>Verbosely creates a gzip compressed tar archive</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -xzvf</code></td>
+      <td>Extract a gzip compressed tar archive with verbose</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -xzvf archive.tar.gz</code></td>
+      <td>Verbosely extracts a gzip compressed tar archive</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -C</code></td>
+      <td>Change to directory before performing any operations</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -xzf archive.tar.gz -C /target/directory</code></td>
+      <td>Extracts files from a tar archive into a specific directory</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>tape archive</td>
+      <td><code class="language-plaintext highlighter-rouge">tar --exclude</code></td>
+      <td>Create an archive excluding specified files</td>
+      <td><code class="language-plaintext highlighter-rouge">tar -czf archive.tar.gz --exclude='*.txt' /path/to/dir</code></td>
+      <td>Creates an archive excluding all <code class="language-plaintext highlighter-rouge">.txt</code> files</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>File Transfer</td>
+      <td><code class="language-plaintext highlighter-rouge">scp</code></td>
+      <td>Secure copy (remote file copy program)</td>
+      <td><code class="language-plaintext highlighter-rouge">scp file.txt user@host:/path</code></td>
+      <td>Copies ‘file.txt’ to a remote host at the specified path</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Secure Shell</td>
+      <td><code class="language-plaintext highlighter-rouge">ssh</code></td>
+      <td>OpenSSH SSH client (remote login program)</td>
+      <td><code class="language-plaintext highlighter-rouge">ssh user@host</code></td>
+      <td>Log into a remote host using SSH</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>System Monitor</td>
+      <td><code class="language-plaintext highlighter-rouge">top</code></td>
+      <td>Displays Linux tasks</td>
+      <td><code class="language-plaintext highlighter-rouge">top</code></td>
+      <td>Displays currently running processes and their stats</td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>Archive Files</td>
+      <td><code class="language-plaintext highlighter-rouge">tar</code></td>
+      <td>Tape Archive, for archiving files</td>
+      <td><code class="language-plaintext highlighter-rouge">tar czvf archive.tar.gz /path/to/dir</code></td>
+      <td>Creates a compressed archive of a directory</td>
+    </tr>
+  </tbody>
+</table>
+
+    <br /><!-- Load Facebook SDK for JavaScript -->
+<!-- Author box -->
+    
+      
+  </div><!-- Incomment incase you want to use Disqus
+      <div id="disqus_thread"></div>
+   -->
+
+
+</article>
+<script>
+    var disqus_config = function () {
+        this.page.url = "https://tiagosr.eu/blog/linux-terminal"; /* Replace PAGE_URL with your page's canonical URL variable */
+        this.page.identifier = "/blog/cli-linux-cheatsheet"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+
+
+    (function () { /* DON'T EDIT BELOW THIS LINE */
+        var d = document,
+            s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript></div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">About Tiago S Rodrigues</div>
+      <div class="card-body">
+        <p class="author_bio"><div>
+ As an engineer, my mission is to creatively solve problems and drive technological advancement. <br />
+ Now I'm focused in DevOps and solutions architecture, but I've got a background in Chemistry and industrial management engineering, which i use everyday to create value to society.<br />
+ <p style="text-align: center">⬇️ Check my life path below ⬇️</p>
+ </div>
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">Categories</div>
+      <div class="card-body text-dark">
+             
+            <div id="#jekyll"></div>
+            <li class="tag-head">
+                <a href="/blog/categories/jekyll">jekyll</a>
+            </li>
+            <a name="jekyll"></a>
+
+             
+            <div id="#guides"></div>
+            <li class="tag-head">
+                <a href="/blog/categories/guides">guides</a>
+            </li>
+            <a name="guides"></a>
+
+             
+            <div id="#sample_category"></div>
+            <li class="tag-head">
+                <a href="/blog/categories/sample_category">sample_category</a>
+            </li>
+            <a name="sample_category"></a>
+
+             
+            <div id="#cheetsheets"></div>
+            <li class="tag-head">
+                <a href="/blog/categories/cheetsheets">cheetsheets</a>
+            </li>
+            <a name="cheetsheets"></a>
+
+             
+            <div id="#devops"></div>
+            <li class="tag-head">
+                <a href="/blog/categories/devops">devops</a>
+            </li>
+            <a name="devops"></a>
+
+            </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">Useful Links</div>
+      <div class="card-body text-dark">
+        
+        <li>
+          <a href="https://tiagosr.eu/">Home</a>
+        </li>
+        
+        <li>
+          <a href="https://tiagosr.eu/about">About</a>
+        </li>
+        
+        <li>
+          <a href="https://tiagosr.eu/blog">Blog</a>
+        </li>
+        
+        <li>
+          <a href="https://tiagosr.eu/contact">Contact</a>
+        </li>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+         <div class="col-lg-12" id="newsletter_footer"><!-- Mailchimp Newletters 
+<form action=""method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div id="mc_embed_signup_scroll_footer">
+    <label for="mce-EMAIL_footer"> Signup for Weekly Email Newsletters :D</label>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL_footer" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups
+    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="b_50bab1c85eae24ecfb0f68361_3a2dd721d0" tabindex="-1" value="">
+    </div><br />
+    <div class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe_footer" class="btn btn-lg btn-success">
+    </div>
+</div>-->
+</div><footer>
+    <div> Made with &#10084; and ☕
+ by <a href="https://github.com/TiagoSRodrigues">Tiago Rodrigues</a>.
+        <img src="/assets/img/github_git_icon_145985.svg">
+        <a href="https://github.com/TiagoSRodrigues/tiagosr" target="_blank">Version: 1.1.3</a>
+        <!-- Subscribe via
+        <a href=" /feed.xml ">RSS</a>-->
+    <div style="text-align: center; font-size: 0.7rem;">
+        This page is more than an introduction, it's a dynamic lab for testing new techniques. <br>
+        Any formatting issues are part of this experimental process.<a href="https://tiagosr.eu/contact/" style="color: var(--logo-color);">Your feedback is always welcome and valued.</a>
+    </div>
+
+</footer>
+<script>
+            var options = {
+                classname: 'progressline',
+                id: 'my-id'
+            };
+            var nanobar = new Nanobar( options );
+            nanobar.go( 30 );
+            nanobar.go( 76 );
+            nanobar.go(100);
+        </script>
+
+   <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+  </body>
+</html>
