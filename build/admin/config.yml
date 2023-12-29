@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: TiagoSRodrigues/TiagoSRodrigues.github.io
-  branch: master
+  repo: TiagoSRodrigues/tiagosr
+  branch: main
   site_domain: tiagosr.eu
 
 media_folder: "assets/img/posts" # Media files will be stored in the repo under images/uploads
@@ -31,7 +31,7 @@ collections:
     create: true
     slug: ".md"
     fields:
-      - {label: "Layout", name: "layout", widget: "select", options: ["about", "blog", "contact", "gallery", "page", "product"]}
+      - {label: "Layout", name: "layout", widget: "select", options: ["about", "blog", "contact", "page",]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Permalink", name: "permalink", widget: "hidden", default: "//"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
