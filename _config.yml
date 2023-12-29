@@ -272,4 +272,4 @@ exclude:
   # - assets/bower_components/imagesloaded/README.md
 
 
-destination: ./build
+destination: /build
