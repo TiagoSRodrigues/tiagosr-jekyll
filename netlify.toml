@@ -1,5 +1,6 @@
 [build]
-  command = "jekyll build --verbose --increment --trace"
+  #command = "jekyll build --verbose --increment --trace"
+  command = ""
   publish = "build"
 
 [build.environment]
