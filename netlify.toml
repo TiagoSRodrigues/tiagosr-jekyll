@@ -1,5 +1,5 @@
 [build]
-  command = "jekyll build --trace JEKYLL_LOG_LEVEL=debug"
+  command = "jekyll build --trace"
   publish = "build"
 
 [build.environment]
