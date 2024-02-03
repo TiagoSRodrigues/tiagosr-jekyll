@@ -1,5 +1,5 @@
 [build]
-  command = "jekyll build --trace --incremental --watch"
+  command = "jekyll build --trace --incremental"
   publish = "build"
 
 [build.environment]
