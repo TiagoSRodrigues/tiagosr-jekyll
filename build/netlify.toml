@@ -1,0 +1,7 @@
+[build]
+  command = "bundle update sass-embedded && jekyll doctor && jekyll build --trace"
+  publish = "build"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+  RUBY_VERSION = "3.1.2"
