@@ -1,5 +1,5 @@
 [build]
-  command = "bundle update sass-embedded && jekyll doctor && jekyll build --trace"
+  command = "bundle update sass-embedded && jekyll doctor && jekyll build --trace --incremental"
   publish = "build"
 
 [build.environment]
